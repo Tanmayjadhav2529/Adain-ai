@@ -487,11 +487,11 @@
 
     {% if result_image %}
     <div class="row justify-content-center mt-5" id="resultSection">
-        <div class="col-md-8">
+        <div class="col-md-6 col-lg-5">
             <div class="card border-success">
                 <div class="card-header bg-success text-white fw-bold text-center py-3" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">Stylized Result</div>
-                <div class="card-body p-0">
-                    <img src="{{ url_for('send_image', filename=result_image) }}" class="img-fluid w-100" alt="Stylized Image" style="border-radius: 0 0 20px 20px;">
+                <div class="card-body p-3 text-center">
+                    <img src="{{ url_for('send_image', filename=result_image) }}" class="img-fluid rounded" alt="Stylized Image" style="max-height: 420px; object-fit: contain; width: auto;">
                 </div>
                 <div class="card-footer text-center" style="background: transparent; border-top: none; padding-bottom: 20px;">
                     <a href="{{ url_for('send_image', filename=result_image) }}" download class="btn btn-outline-light mt-2">Download Result</a>
