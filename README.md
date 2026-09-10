@@ -1,5 +1,7 @@
 # StyleForge AI — Arbitrary Neural Style Transfer (AdaIN)
 
+🌐 **Live Deployed Web Application**: [https://adain-ai.onrender.com/](https://adain-ai.onrender.com/)
+
 StyleForge AI is a web application for real-time **Arbitrary Neural Style Transfer** powered by PyTorch, Flask, and the **Adaptive Instance Normalization (AdaIN)** algorithm. It allows users to upload any content image and any style reference image, control the style intensity with a dynamic strength slider, and download high-quality stylized results instantly.
 
 ---
@@ -14,6 +16,8 @@ Traditional Neural Style Transfer (NST) approaches rely on slow, iterative optim
 3. **Decoupled Decoder**: Inverts the normalized features back into a high-resolution stylized output image.
 
 This architecture enables **instant, arbitrary style transfer** for any un-seen style image without retraining or fine-tuning the model!
+
+🚀 **Try the Live App**: [https://adain-ai.onrender.com/](https://adain-ai.onrender.com/)
 
 ---
 
@@ -138,9 +142,12 @@ Arguments:
 
 ---
 
-## Deploying to Render
+## Live Deployment & Render Configuration
 
-To deploy this project to [Render](https://render.com/):
+The application is deployed live on Render:
+🔗 **Production URL**: [https://adain-ai.onrender.com/](https://adain-ai.onrender.com/)
+
+To deploy your own instance to [Render](https://render.com/):
 
 1. Connect your GitHub repository **`Tanmayjadhav2529/Adain-ai`**.
 2. Create a new **Web Service**.
