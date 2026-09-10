@@ -411,7 +411,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#aboutSection">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
@@ -507,6 +507,46 @@
         </div>
     {% endif %}
 </div>
+
+<!-- About Section -->
+<section class="container mt-5 mb-5 fade-in-up" id="aboutSection">
+    <div class="card" style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; overflow: hidden;">
+        <div class="card-header text-center py-3" style="background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); font-family: 'Orbitron', sans-serif; font-size: 1.25rem; font-weight: 700; letter-spacing: 1px; color: #ffffff;">
+            ABOUT STYLEFORGE AI
+        </div>
+        <div class="card-body p-4 p-md-5">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-3" style="color: #f8fafc; font-family: 'Orbitron', sans-serif;">Arbitrary Style Transfer in Real-Time</h3>
+                    <p class="text-muted lead fs-6">
+                        StyleForge AI is an advanced deep learning platform that transfers the artistic style from any reference artwork onto your photos in seconds using <strong>Adaptive Instance Normalization (AdaIN)</strong>.
+                    </p>
+                    <p class="text-muted fs-6">
+                        Unlike traditional Neural Style Transfer algorithms that require hours of optimization or dedicated models for single styles, AdaIN adjusts feature statistics (mean and variance) in real-time. This enables arbitrary style transfer across any pair of content and style images instantaneously.
+                    </p>
+                    <div class="row g-3 mt-2">
+                        <div class="col-6">
+                            <div class="p-3 rounded text-center" style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255,255,255,0.08);">
+                                <h4 class="fw-bold mb-1" style="color: #a855f7;">VGG-19</h4>
+                                <span class="small text-muted">Feature Extractor</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 rounded text-center" style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255,255,255,0.08);">
+                                <h4 class="fw-bold mb-1" style="color: #10b981;">AdaIN</h4>
+                                <span class="small text-muted">Real-Time Alignment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="{{ url_for('static', filename='adain_algo.png') }}" alt="AdaIN Architecture" class="img-fluid rounded-3 shadow" style="border: 1px solid rgba(255,255,255,0.15); max-height: 320px;" onerror="this.src='/adain_algo.png'">
+                    <p class="small text-muted mt-2 mb-0">AdaIN Neural Network Pipeline Architecture</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <footer class="footer-section">
     <div class="container">

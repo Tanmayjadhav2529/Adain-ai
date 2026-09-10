@@ -4,6 +4,19 @@ StyleForge AI is a web application for real-time **Arbitrary Neural Style Transf
 
 ---
 
+## About StyleForge AI
+
+Traditional Neural Style Transfer (NST) approaches rely on slow, iterative optimization processes that require minutes to hours per image or demand training a dedicated neural network for every single style.
+
+**StyleForge AI** solves this limitation using **Adaptive Instance Normalization (AdaIN)**:
+1. **VGG-19 Encoder**: Extracts deep feature representations from both the content image and the style image.
+2. **AdaIN Layer**: Dynamically aligns the mean and standard deviation of content feature activations to match those of the style features in real-time.
+3. **Decoupled Decoder**: Inverts the normalized features back into a high-resolution stylized output image.
+
+This architecture enables **instant, arbitrary style transfer** for any un-seen style image without retraining or fine-tuning the model!
+
+---
+
 ## Features
 
 - **Arbitrary Style Transfer**: Apply any artistic style (painting, sketch, abstract, etc.) to any target photo without re-training the model.
